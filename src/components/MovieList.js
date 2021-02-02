@@ -8,7 +8,7 @@ const MovieList = ({movies}) => {
     });
     console.log(renderedList);
     return (
-        <div>{renderedList}</div>
+        <div className='rendered_list'>{renderedList}</div>
     )
 };
 
