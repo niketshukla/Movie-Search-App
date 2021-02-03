@@ -9,6 +9,16 @@ class App extends React.Component{
         movies: []
     };
 
+    componentDidMount = () => {
+        this.onDefaultList();
+    }
+
+    onDefaultList = async () => {
+        const responseDefault = await themoviedb.get('/discover/movie');
+        this.setState({movies: responseDefault.data.results});
+        // console.log({movies: responseDefault.data.results});
+    }
+
     onSearchSubmit = async (term) => {
         const response = await themoviedb.get('/search/movie', {
             params: {
