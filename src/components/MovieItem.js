@@ -8,7 +8,7 @@ const MovieItem = ({ movie }) => {
             <h2 className='movie_title'>{movie.title}</h2>
             <p>Release Date: {movie.release_date}</p>
             <p>Rating: {movie.vote_average}</p>
-            <p className='overview'>{movie.overview}</p>
+            {/* <p className='overview'>{movie.overview}</p> */}
         </div>
     )
 };
