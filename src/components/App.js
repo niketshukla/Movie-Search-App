@@ -31,7 +31,7 @@ class App extends React.Component{
     render(){
         return (
             <div className="ui container">
-                <h1>React Movie Search App</h1>
+                <h1 className='app_header'>React Movie Search App</h1>
                 <SearchBar onFormSubmit={this.onSearchSubmit} />
                 {/* Found: {this.state.movies.length} movies */}
                 <MovieList movies={this.state.movies} />
